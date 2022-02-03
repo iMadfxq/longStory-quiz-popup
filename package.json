@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production --config webpack.config.js",
+    "dev": "webpack --watch --mode development --config webpack.config.dev.js"
   },
   "keywords": [],
   "author": "iMadfxq <imadfxq@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.6.0",
     "dart-sass": "^1.25.0",
     "html-webpack-plugin": "^5.5.0",
